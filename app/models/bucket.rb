@@ -18,10 +18,12 @@ class Bucket < ActiveRecord::Base
     :material
   ]
 
-  fastapi_default_filters({
-    marbles: {
-      radius__lte: 10
-    }
-  })
+  # Remove comments to apply a default filter
+  
+  # fastapi_default_filters({
+  #   marbles: {
+  #     radius__lte: 10
+  #   }
+  # })
 
 end
