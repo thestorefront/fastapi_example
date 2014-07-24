@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FastAPI Examples</title>
+</head>
+<body>
+
+<h1>FastAPI Examples</h1>
+
+<hr><br>
+
+Welcome to the Ruby on Rails FastAPI example project.<br><br>
+
+We have three main models:<br>
+
+<ol>
+  <li>
+    <a href="/api/v1/people">/api/v1/people/ - Person (People endpoint)</a>
+  </li>
+  <li>
+    <a href="/api/v1/buckets">/api/v1/buckets/ - Bucket (Buckets endpoint)</a>
+  </li>
+  <li>
+    <a href="/api/v1/marbles">/api/v1/marbles/ - Marble (Marbles endpoint)</a>
+  </li>
+</ol>
+
+Explore the API with query parameters and then check out the code.<br><br>
+
+For example, to get everybody with an age >= 25:<br>
+<a href="/api/v1/people/?age__gte=25">/api/v1/people/?age__gte=25</a><br><br>
+
+All buckets made of aluminum:<br>
+<a href="/api/v1/buckets/?material=aluminum">/api/v1/buckets/?material=aluminum</a><br><br>
+
+All red and green marbles:<br>
+<a href="/api/v1/marbles/?color__in[]=red&color__in[]=green">/api/v1/marbles/?color__in[]=red&color__in[]=green</a><br><br>
+
+All people with the letter 'o' in their name:<br>
+<a href="/api/v1/people/?name__icontains=o">/api/v1/people/?name__icontains=o</a><br><br>
+
+All iron and plastic buckets colored matte black:<br>
+<a href="/api/v1/buckets/?material__in[]=iron&material__in[]=plastic&color=matte%20black">/api/v1/buckets/?material__in[]=iron&material__in[]=plastic&color=matte%20black</a><br><br>
+
+All transparent aqua marbles, ordered by radius, except for the largest:<br>
+<a href="/api/v1/marbles/?color=transparent%20aqua&__order=radius,DESC&__offset=1">/api/v1/marbles/?color=transparent%20aqua&__order=radius,DESC&__offset=1</a><br><br>
+
+<hr><br>
+
+More details available on the <a href="http://github.com/thestorefront/FastAPI/">FastAPI github project</a>.<br><br>
+Feel free to check us out on <a href="http://rubygems.org/gems/fastapi">RubyGems.org - fastapi</a> as well!<br><br>
+
+<hr><br>
+
+FastAPI is MIT licensed, created by <a href="http://keithwhor.com/">Keith Horwood</a> of <a href="http://thestorefront.com/">Storefront, Inc.</a><br><br>
+
+</body>
+</html>
