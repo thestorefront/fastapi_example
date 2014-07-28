@@ -37,4 +37,4 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 
-gem 'fastapi', '~> 0.1.4'
+gem 'fastapi', '~> 0.1.6'
